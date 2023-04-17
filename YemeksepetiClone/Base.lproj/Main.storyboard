@@ -90,7 +90,7 @@
                                     <constraint firstItem="loC-fo-3Hh" firstAttribute="leading" secondItem="jOy-QU-RcH" secondAttribute="leading" constant="10" id="xYf-xa-eXH"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-M2-Rr7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucN-M2-Rr7">
                                 <rect key="frame" x="0.0" y="153.33333333333331" width="393" height="698.66666666666674"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zf8-ha-xvJ" userLabel="ContentView">
@@ -298,10 +298,6 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
-                                                        <connections>
-                                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="tRz-Er-BYi"/>
-                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Rux-3G-cyx"/>
-                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -315,15 +311,50 @@
                                                     <constraint firstAttribute="trailing" secondItem="EyL-7c-nrT" secondAttribute="trailing" constant="16" id="otM-X7-KoS"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TZ-2D-hvH">
+                                                <rect key="frame" x="0.0" y="639" width="393" height="298.33333333333326"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutfak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-Cu-vYG">
+                                                        <rect key="frame" x="10" y="9.9999999999999982" width="367" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJ2-TL-Iwm">
+                                                        <rect key="frame" x="0.0" y="38.333333333333258" width="393" height="260"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZsZ-eL-Uof">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="vJ2-TL-Iwm" secondAttribute="bottom" id="18x-2F-Jbb"/>
+                                                    <constraint firstItem="vJ2-TL-Iwm" firstAttribute="leading" secondItem="0TZ-2D-hvH" secondAttribute="leading" id="I0g-ek-MHr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vJ2-TL-Iwm" secondAttribute="trailing" id="I4I-MJ-EFR"/>
+                                                    <constraint firstItem="vJ2-TL-Iwm" firstAttribute="top" secondItem="0u3-Cu-vYG" secondAttribute="bottom" constant="8" id="awh-lf-i3n"/>
+                                                    <constraint firstItem="0u3-Cu-vYG" firstAttribute="top" secondItem="0TZ-2D-hvH" secondAttribute="top" constant="10" id="hlt-aL-2fw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0u3-Cu-vYG" secondAttribute="trailing" constant="16" id="nOH-zR-zr5"/>
+                                                    <constraint firstItem="0u3-Cu-vYG" firstAttribute="leading" secondItem="0TZ-2D-hvH" secondAttribute="leading" constant="10" id="yBZ-U0-q1a"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OL3-iJ-IQH" firstAttribute="leading" secondItem="zf8-ha-xvJ" secondAttribute="leading" id="1It-an-4dE"/>
+                                            <constraint firstItem="0TZ-2D-hvH" firstAttribute="leading" secondItem="zf8-ha-xvJ" secondAttribute="leading" id="32s-19-pfX"/>
                                             <constraint firstItem="OL3-iJ-IQH" firstAttribute="top" secondItem="Ua4-OG-6NG" secondAttribute="bottom" id="3jD-nW-nRC"/>
                                             <constraint firstAttribute="height" constant="1000" id="6Ap-cO-cxB"/>
                                             <constraint firstItem="Ua4-OG-6NG" firstAttribute="leading" secondItem="zf8-ha-xvJ" secondAttribute="leading" id="HIr-U8-epB"/>
                                             <constraint firstAttribute="trailing" secondItem="OL3-iJ-IQH" secondAttribute="trailing" id="MYj-4u-kLb"/>
+                                            <constraint firstItem="0TZ-2D-hvH" firstAttribute="top" secondItem="OL3-iJ-IQH" secondAttribute="bottom" id="Nfg-Sm-wuA"/>
                                             <constraint firstItem="Ua4-OG-6NG" firstAttribute="top" secondItem="zf8-ha-xvJ" secondAttribute="top" id="cdk-cW-eep"/>
+                                            <constraint firstAttribute="trailing" secondItem="0TZ-2D-hvH" secondAttribute="trailing" id="t0Y-Ep-SGj"/>
                                             <constraint firstAttribute="trailing" secondItem="Ua4-OG-6NG" secondAttribute="trailing" id="uLq-Gd-vnt"/>
                                         </constraints>
                                     </view>
@@ -346,6 +377,7 @@
                             <constraint firstItem="ucN-M2-Rr7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8xz-YP-QuO"/>
                             <constraint firstItem="jOy-QU-RcH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DK7-El-gfk"/>
                             <constraint firstItem="OL3-iJ-IQH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="Sws-DT-H54"/>
+                            <constraint firstItem="0TZ-2D-hvH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="ZJO-vb-1TV"/>
                             <constraint firstItem="jOy-QU-RcH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZXP-bG-MYZ"/>
                             <constraint firstItem="jOy-QU-RcH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lDN-Zs-tBz"/>
                             <constraint firstItem="jOy-QU-RcH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18" id="xkD-rk-V9q"/>
@@ -353,7 +385,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="cJM-6h-bEC" id="UVP-qf-d38"/>
+                        <outlet property="categoryCollectionView" destination="vJ2-TL-Iwm" id="CcP-sI-f9h"/>
+                        <outlet property="pastCollectionView" destination="cJM-6h-bEC" id="KGx-go-ZBT"/>
                         <outlet property="searchBar" destination="loC-fo-3Hh" id="yv3-G4-hLm"/>
                     </connections>
                 </viewController>
