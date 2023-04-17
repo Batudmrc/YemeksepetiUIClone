@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PastOrdersCollectionViewCell" id="gTV-IL-0wX" customClass="PastOrdersCollectionViewCell" customModule="YemeksepetiClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syc-F8-Ctu">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="234"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6Ip-y9-t7C">
+                                <rect key="frame" x="24" y="0.0" width="226" height="210"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gelal" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-JJ-bVr">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="99.666666666666671"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cpn-Db-Sah">
+                                        <rect key="frame" x="0.0" y="105.66666666666669" width="226" height="104.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Köfteci Yusuf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZ9-r3-bAA">
+                                                <rect key="frame" x="0.0" y="0.0" width="226" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Köfte, Kebap &amp; Türk Mutfağı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-rf-klN">
+                                                <rect key="frame" x="0.0" y="23.333333333333325" width="226" height="62.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="0 TL Gönderim Ücreti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX2-XS-ygz">
+                                                <rect key="frame" x="0.0" y="89.999999999999986" width="226" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ip-y9-t7C" firstAttribute="top" secondItem="syc-F8-Ctu" secondAttribute="top" id="5Z4-YY-k4d"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ip-y9-t7C" secondAttribute="trailing" constant="24" id="VCw-Ll-vLV"/>
+                            <constraint firstAttribute="bottom" secondItem="6Ip-y9-t7C" secondAttribute="bottom" constant="24" id="cPl-Va-hiK"/>
+                            <constraint firstItem="6Ip-y9-t7C" firstAttribute="leading" secondItem="syc-F8-Ctu" secondAttribute="leading" constant="24" id="eAm-vN-0dL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="syc-F8-Ctu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1ki-ss-ZS5"/>
+                <constraint firstAttribute="bottom" secondItem="syc-F8-Ctu" secondAttribute="bottom" id="Kmx-rV-Sj3"/>
+                <constraint firstItem="syc-F8-Ctu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pwk-ys-6sI"/>
+                <constraint firstAttribute="trailing" secondItem="syc-F8-Ctu" secondAttribute="trailing" id="bYx-Xg-7yu"/>
+            </constraints>
+            <size key="customSize" width="274" height="234"/>
+            <connections>
+                <outlet property="categoryLabel" destination="Jl8-rf-klN" id="NO6-Ez-w1R"/>
+                <outlet property="imageView" destination="Yjt-JJ-bVr" id="Hgi-Ar-BoO"/>
+                <outlet property="servicePrice" destination="CX2-XS-ygz" id="8Qm-79-BSt"/>
+                <outlet property="titleLabel" destination="HZ9-r3-bAA" id="4D2-8D-DMW"/>
+            </connections>
+            <point key="canvasLocation" x="296.18320610687022" y="73.943661971830991"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Gelal" width="69" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
