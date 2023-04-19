@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardView: UIView {
+class LightGrayCard: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,9 +19,9 @@ class CardView: UIView {
     }
     // This class adds shadowing effect in UIView's
     private func initialSetup() {
-        layer.backgroundColor = .init(red: 255, green: 255, blue: 255, alpha: 1)
+        layer.backgroundColor = .init(red: 0, green: 0, blue: 0, alpha: 0.05)
         layer.shadowOffset = .zero
-        layer.shadowOpacity = 0.15
+        layer.shadowOpacity = 0.2
         layer.cornerRadius = 5
 
     }

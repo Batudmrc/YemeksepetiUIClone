@@ -9,22 +9,29 @@
 /* Begin PBXBuildFile section */
 		3B09CF3729ED814100DD888D /* PastOrdersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B09CF3529ED814100DD888D /* PastOrdersCollectionViewCell.swift */; };
 		3B09CF3829ED814100DD888D /* PastOrdersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B09CF3629ED814100DD888D /* PastOrdersCollectionViewCell.xib */; };
+		3B108EEB29EEA4AE00E9578A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B108EEA29EEA4AE00E9578A /* SecondViewController.swift */; };
 		3B2951CD29EDA08200D1FCC1 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2951CB29EDA08200D1FCC1 /* CategoryCollectionViewCell.swift */; };
 		3B2951CE29EDA08200D1FCC1 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2951CC29EDA08200D1FCC1 /* CategoryCollectionViewCell.xib */; };
+		3B4A8E4429F0057E00D4430F /* OffersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4A8E4229F0057E00D4430F /* OffersCollectionViewCell.swift */; };
+		3B4A8E4529F0057E00D4430F /* OffersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4A8E4329F0057E00D4430F /* OffersCollectionViewCell.xib */; };
 		3B53A17029EB4A9700EF5DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A16F29EB4A9700EF5DD5 /* AppDelegate.swift */; };
 		3B53A17229EB4A9700EF5DD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A17129EB4A9700EF5DD5 /* SceneDelegate.swift */; };
 		3B53A17429EB4A9700EF5DD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A17329EB4A9700EF5DD5 /* ViewController.swift */; };
 		3B53A17729EB4A9700EF5DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B53A17529EB4A9700EF5DD5 /* Main.storyboard */; };
 		3B53A17929EB4A9800EF5DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B53A17829EB4A9800EF5DD5 /* Assets.xcassets */; };
 		3B53A17C29EB4A9800EF5DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B53A17A29EB4A9800EF5DD5 /* LaunchScreen.storyboard */; };
+		3B6E79F629EFFE5300E28A37 /* LightGrayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6E79F529EFFE5300E28A37 /* LightGrayCard.swift */; };
 		3BBE622E29EC9DCD00245284 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE622D29EC9DCD00245284 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B09CF3529ED814100DD888D /* PastOrdersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrdersCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B09CF3629ED814100DD888D /* PastOrdersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PastOrdersCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B108EEA29EEA4AE00E9578A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3B2951CB29EDA08200D1FCC1 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B2951CC29EDA08200D1FCC1 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		3B4A8E4229F0057E00D4430F /* OffersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B4A8E4329F0057E00D4430F /* OffersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffersCollectionViewCell.xib; sourceTree = "<group>"; };
 		3B53A16C29EB4A9700EF5DD5 /* YemeksepetiClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YemeksepetiClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53A16F29EB4A9700EF5DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53A17129EB4A9700EF5DD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +40,7 @@
 		3B53A17829EB4A9800EF5DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B53A17B29EB4A9800EF5DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B53A17D29EB4A9800EF5DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6E79F529EFFE5300E28A37 /* LightGrayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightGrayCard.swift; sourceTree = "<group>"; };
 		3BBE622D29EC9DCD00245284 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +58,7 @@
 		3B2951C829EDA01300D1FCC1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3B4A8E4129F0052D00D4430F /* OffersView */,
 				3B2951CA29EDA06500D1FCC1 /* CategoryView */,
 				3B2951C929EDA05600D1FCC1 /* PastOrderView */,
 			);
@@ -72,6 +81,15 @@
 				3B2951CC29EDA08200D1FCC1 /* CategoryCollectionViewCell.xib */,
 			);
 			path = CategoryView;
+			sourceTree = "<group>";
+		};
+		3B4A8E4129F0052D00D4430F /* OffersView */ = {
+			isa = PBXGroup;
+			children = (
+				3B4A8E4229F0057E00D4430F /* OffersCollectionViewCell.swift */,
+				3B4A8E4329F0057E00D4430F /* OffersCollectionViewCell.xib */,
+			);
+			path = OffersView;
 			sourceTree = "<group>";
 		};
 		3B53A16329EB4A9700EF5DD5 = {
@@ -97,11 +115,13 @@
 				3B53A16F29EB4A9700EF5DD5 /* AppDelegate.swift */,
 				3B53A17129EB4A9700EF5DD5 /* SceneDelegate.swift */,
 				3B53A17329EB4A9700EF5DD5 /* ViewController.swift */,
+				3B108EEA29EEA4AE00E9578A /* SecondViewController.swift */,
 				3BBE622D29EC9DCD00245284 /* CardView.swift */,
 				3B53A17529EB4A9700EF5DD5 /* Main.storyboard */,
 				3B53A17829EB4A9800EF5DD5 /* Assets.xcassets */,
 				3B53A17A29EB4A9800EF5DD5 /* LaunchScreen.storyboard */,
 				3B53A17D29EB4A9800EF5DD5 /* Info.plist */,
+				3B6E79F529EFFE5300E28A37 /* LightGrayCard.swift */,
 			);
 			path = YemeksepetiClone;
 			sourceTree = "<group>";
@@ -167,6 +187,7 @@
 				3B53A17C29EB4A9800EF5DD5 /* LaunchScreen.storyboard in Resources */,
 				3B2951CE29EDA08200D1FCC1 /* CategoryCollectionViewCell.xib in Resources */,
 				3B53A17929EB4A9800EF5DD5 /* Assets.xcassets in Resources */,
+				3B4A8E4529F0057E00D4430F /* OffersCollectionViewCell.xib in Resources */,
 				3B09CF3829ED814100DD888D /* PastOrdersCollectionViewCell.xib in Resources */,
 				3B53A17729EB4A9700EF5DD5 /* Main.storyboard in Resources */,
 			);
@@ -182,7 +203,10 @@
 				3B53A17429EB4A9700EF5DD5 /* ViewController.swift in Sources */,
 				3B53A17029EB4A9700EF5DD5 /* AppDelegate.swift in Sources */,
 				3BBE622E29EC9DCD00245284 /* CardView.swift in Sources */,
+				3B6E79F629EFFE5300E28A37 /* LightGrayCard.swift in Sources */,
 				3B09CF3729ED814100DD888D /* PastOrdersCollectionViewCell.swift in Sources */,
+				3B4A8E4429F0057E00D4430F /* OffersCollectionViewCell.swift in Sources */,
+				3B108EEB29EEA4AE00E9578A /* SecondViewController.swift in Sources */,
 				3B2951CD29EDA08200D1FCC1 /* CategoryCollectionViewCell.swift in Sources */,
 				3B53A17229EB4A9700EF5DD5 /* SceneDelegate.swift in Sources */,
 			);
