@@ -13,6 +13,9 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var offersCollectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    
+    var offers: [Offer] = [Offer(image: "offer1"),Offer(image: "offer2"),Offer(image: "offer3"),Offer(image: "offer4"),Offer(image: "offer5"),Offer(image: "offer6"),Offer(image: "offer2"),Offer(image: "offer1"),Offer(image: "offer2")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +28,8 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
         setupSearchBar()
         scrollView.delegate = self
         scrollView.contentInsetAdjustmentBehavior = .never
+        
+        offersCollectionView.register(UINib(nibName: OffersCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: OffersCollectionViewCell.identifier)
         
         
         // Do any additional setup after loading the view.
@@ -57,11 +62,13 @@ class SecondViewController: UIViewController, UIScrollViewDelegate {
 
 extension SecondViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return offers.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OffersCollectionViewCell.identifier, for: indexPath) as! OffersCollectionViewCell
+        cell.setup(offer: offers[indexPath.row])
+        return cell
     }
     
     

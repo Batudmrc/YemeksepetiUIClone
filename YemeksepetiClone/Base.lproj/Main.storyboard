@@ -598,10 +598,10 @@ Avantajlar</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIp-nP-g5N">
-                                                <rect key="frame" x="0.0" y="207.66666666666663" width="393" height="128"/>
+                                                <rect key="frame" x="0.0" y="207.66666666666669" width="393" height="221.66666666666669"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GwD-vs-rWk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="128"/>
+                                                        <rect key="frame" x="8" y="0.0" width="385" height="221.66666666666666"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E16-Jb-nf0">
                                                             <size key="itemSize" width="128" height="128"/>
@@ -617,7 +617,39 @@ Avantajlar</string>
                                                     <constraint firstAttribute="bottom" secondItem="GwD-vs-rWk" secondAttribute="bottom" id="8h9-nM-CN7"/>
                                                     <constraint firstItem="GwD-vs-rWk" firstAttribute="top" secondItem="PIp-nP-g5N" secondAttribute="top" id="J1j-Qh-aCK"/>
                                                     <constraint firstAttribute="trailing" secondItem="GwD-vs-rWk" secondAttribute="trailing" id="OTQ-FW-qH0"/>
-                                                    <constraint firstItem="GwD-vs-rWk" firstAttribute="leading" secondItem="PIp-nP-g5N" secondAttribute="leading" id="qFw-mT-PPp"/>
+                                                    <constraint firstItem="GwD-vs-rWk" firstAttribute="leading" secondItem="PIp-nP-g5N" secondAttribute="leading" constant="8" id="qFw-mT-PPp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-gZ-pKP">
+                                                <rect key="frame" x="0.0" y="429.3333333333332" width="393" height="570.66666666666652"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tüm Restoranlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNG-b6-vfw">
+                                                        <rect key="frame" x="10" y="9.9999999999999982" width="367" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-uf-9Bw">
+                                                        <rect key="frame" x="0.0" y="46.333333333333371" width="393" height="524.33333333333337"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KVG-xq-Rwv">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="tNG-b6-vfw" firstAttribute="leading" secondItem="h6a-gZ-pKP" secondAttribute="leading" constant="10" id="EB6-9N-0lR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tNG-b6-vfw" secondAttribute="trailing" constant="16" id="Pzi-9k-imL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XEM-uf-9Bw" secondAttribute="trailing" id="ZTC-Xp-6Oz"/>
+                                                    <constraint firstItem="tNG-b6-vfw" firstAttribute="top" secondItem="h6a-gZ-pKP" secondAttribute="top" constant="10" id="rVL-jO-c8A"/>
+                                                    <constraint firstItem="XEM-uf-9Bw" firstAttribute="top" secondItem="tNG-b6-vfw" secondAttribute="bottom" constant="16" id="td3-Ne-vk0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XEM-uf-9Bw" secondAttribute="bottom" id="uxy-5A-uNs"/>
+                                                    <constraint firstItem="XEM-uf-9Bw" firstAttribute="leading" secondItem="h6a-gZ-pKP" secondAttribute="leading" id="wk7-Wq-mS3"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -628,11 +660,15 @@ Avantajlar</string>
                                             <constraint firstItem="HnX-VH-bS7" firstAttribute="top" secondItem="gx7-CK-hRK" secondAttribute="bottom" constant="16" id="D4Y-VL-klX"/>
                                             <constraint firstAttribute="height" constant="1000" id="EoF-uj-ajv"/>
                                             <constraint firstItem="PIp-nP-g5N" firstAttribute="leading" secondItem="Wla-mk-aaG" secondAttribute="leading" id="Hpf-1B-XKG"/>
+                                            <constraint firstItem="h6a-gZ-pKP" firstAttribute="top" secondItem="PIp-nP-g5N" secondAttribute="bottom" id="TUW-ZZ-k8I"/>
                                             <constraint firstItem="HnX-VH-bS7" firstAttribute="leading" secondItem="Wla-mk-aaG" secondAttribute="leading" id="V0D-kO-zDH"/>
                                             <constraint firstAttribute="trailing" secondItem="gx7-CK-hRK" secondAttribute="trailing" id="aB0-dw-652"/>
                                             <constraint firstItem="PIp-nP-g5N" firstAttribute="top" secondItem="HnX-VH-bS7" secondAttribute="bottom" id="aHr-lJ-mfw"/>
+                                            <constraint firstAttribute="trailing" secondItem="h6a-gZ-pKP" secondAttribute="trailing" id="ace-nO-AiI"/>
                                             <constraint firstAttribute="trailing" secondItem="HnX-VH-bS7" secondAttribute="trailing" id="adm-Dg-uXc"/>
+                                            <constraint firstAttribute="bottom" secondItem="h6a-gZ-pKP" secondAttribute="bottom" id="bIJ-bK-RzB"/>
                                             <constraint firstAttribute="trailing" secondItem="PIp-nP-g5N" secondAttribute="trailing" id="hTN-Ng-0Ix"/>
+                                            <constraint firstItem="h6a-gZ-pKP" firstAttribute="leading" secondItem="Wla-mk-aaG" secondAttribute="leading" id="pxl-KX-plC"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -651,7 +687,7 @@ Avantajlar</string>
                             <constraint firstItem="dwG-fo-nCa" firstAttribute="top" secondItem="S3d-BY-HSs" secondAttribute="bottom" id="69o-ST-E4C"/>
                             <constraint firstItem="S3d-BY-HSs" firstAttribute="trailing" secondItem="ui6-P9-Ofr" secondAttribute="trailing" id="Adx-VL-YG1"/>
                             <constraint firstItem="Wla-mk-aaG" firstAttribute="width" secondItem="DKY-gv-wCG" secondAttribute="width" id="GHd-jU-yGb"/>
-                            <constraint firstItem="PIp-nP-g5N" firstAttribute="height" secondItem="DKY-gv-wCG" secondAttribute="height" multiplier="0.15" id="GI3-XT-ry7"/>
+                            <constraint firstItem="PIp-nP-g5N" firstAttribute="height" secondItem="DKY-gv-wCG" secondAttribute="height" multiplier="0.26" id="GI3-XT-ry7"/>
                             <constraint firstItem="dwG-fo-nCa" firstAttribute="leading" secondItem="ui6-P9-Ofr" secondAttribute="leading" id="Gjb-Zf-4da"/>
                             <constraint firstItem="S3d-BY-HSs" firstAttribute="top" secondItem="DKY-gv-wCG" secondAttribute="top" id="MUa-ud-myO"/>
                             <constraint firstItem="S3d-BY-HSs" firstAttribute="leading" secondItem="ui6-P9-Ofr" secondAttribute="leading" id="NYW-fy-QRq"/>
@@ -660,6 +696,11 @@ Avantajlar</string>
                             <constraint firstItem="gx7-CK-hRK" firstAttribute="height" secondItem="DKY-gv-wCG" secondAttribute="height" multiplier="0.11" id="ghn-hu-kic"/>
                             <constraint firstItem="S3d-BY-HSs" firstAttribute="height" secondItem="DKY-gv-wCG" secondAttribute="height" multiplier="0.179969" id="qwb-QI-UQn"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="GI3-XT-ry7"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="offersCollectionView" destination="GwD-vs-rWk" id="Fzb-eE-gLF"/>
